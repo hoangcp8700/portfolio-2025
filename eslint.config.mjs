@@ -37,6 +37,7 @@ const eslintConfig = [
       'no-var': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
       'no-empty': 'off',
+      'no-unused-vars': 'off',
 
       'import/order': [
         'error',
