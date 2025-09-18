@@ -102,8 +102,7 @@ function NavBar({ items }: { items: { href: string; label: string }[] }) {
                 {active && (
                   <motion.span
                     layoutId="nav-active-dot"
-                    className="absolute top-2 right-0 z-10 h-1.5 w-1.5 -translate-x-1/2 rounded-full"
-                    style={{ backgroundColor: "oklch(0.78 0.18 145)" }}
+                    className="absolute top-2 right-0 z-10 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-emerald-dot"
                     initial={{ opacity: 0, scale: 0.7 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.7 }}

@@ -14,7 +14,7 @@ export function About() {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-3 text-sm">
-          <Stat label="Experience" value={`${profile.yearsOfExperience}+ yrs`} />
+          <Stat label="Experience" value={`${profile.yearsOfExperience}+ year`} />
           <Stat label="Projects" value={`${profile.completedProjects}+`} />
           <Stat label="Education" value={profile.education} />
           <Stat label="Location" value={profile.location} />
@@ -27,9 +27,9 @@ export function About() {
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-xl border p-4">
-      <div className="text-xs uppercase text-muted-foreground">{label}</div>
-      <div className="mt-1 text-base font-semibold">{value}</div>
+    <div className="rounded-xl border p-4 flex justify-center items-center flex-col min-h-32">
+      <div className="mt-1 text-lg font-semibold text-center">{value}</div>
+      <div className="text-xs text-muted-foreground font-syne">{label}</div>
     </div>
   );
 }

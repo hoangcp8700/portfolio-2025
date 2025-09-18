@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { profile } from "@/shared/constants/data";
 
 import { Section } from "../atoms/Section";
 
@@ -29,8 +30,8 @@ export function ContactForm() {
         <Button type="submit">Send</Button>
         {status && <p className="text-sm text-muted-foreground">{status}</p>}
         <div className="text-sm text-muted-foreground">
-          <div>Address: Ho Chi Minh City, Vietnam</div>
-          <div>Email: you@example.com · Phone: +84 90 000 0000</div>
+          <div>Address: {profile.location}</div>
+          <div>Email: <a href={`mailto:${profile.email}`}>{profile.email}</a> · Phone: {profile.phone}</div>
         </div>
       </form>
     </Section>

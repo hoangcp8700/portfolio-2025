@@ -12,6 +12,7 @@ export type Experience = {
 export type Project = {
   slug: string;
   title: string;
+  topic: string;
   tags: string[];
   blurb: string;
   cover: string; // /images/...

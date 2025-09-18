@@ -1,3 +1,5 @@
+import { Facebook, Linkedin } from 'lucide-react';
+
 import { Profile, Skill, Experience, Project } from '@/types/common';
 
 export const NAV = [
@@ -56,14 +58,11 @@ export const projects: Project[] = [
   {
     slug: 'ai-medcast',
     title: 'AI Medcast',
-    tags: ['AI', 'Healthcare'],
+    topic: 'Healthcare',
+    tags: ['AI'],
     blurb: 'Evidence-based medical QA platform with streaming answers.',
-    cover: '/images/projects/medcast-cover.jpg',
-    images: [
-      '/images/projects/medcast-1.jpg',
-      '/images/projects/medcast-2.jpg',
-      '/images/projects/medcast-3.jpg',
-    ],
+    cover: '/project.jpeg',
+    images: ['/project.jpeg', '/project.jpeg', '/project.jpeg'],
     tech: ['Next.js', 'Tailwind', 'Framer Motion', 'OpenAI'],
     content:
       '<p>Built a modular chat interface with SSE streaming, verification pipeline, and rich citations.</p>',
@@ -71,11 +70,25 @@ export const projects: Project[] = [
   {
     slug: 'finance-raven',
     title: 'Raven Commercial Finance',
-    tags: ['Fintech', 'Dashboard'],
+    topic: 'Fintech',
+    tags: ['Dashboard'],
     blurb: 'Loan origination platform with complex forms & charts.',
-    cover: '/images/projects/raven-cover.jpg',
-    images: ['/images/projects/raven-1.jpg'],
+    cover: '/project.jpeg',
+    images: ['/project.jpeg'],
     tech: ['Next.js', 'Tailwind', 'React Query'],
     content: '<p>Dynamic schemas, validation, and real-time analytics.</p>',
+  },
+];
+
+export const SOCIALS = [
+  {
+    href: 'https://www.linkedin.com/in/your-handle',
+    label: 'LinkedIn',
+    Icon: Linkedin,
+  },
+  {
+    href: 'https://www.facebook.com/your-handle',
+    label: 'Facebook',
+    Icon: Facebook,
   },
 ];
